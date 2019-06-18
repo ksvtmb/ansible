@@ -1,0 +1,11 @@
+---
+# An employee record
+martin:
+    name: Martin D'vloper
+    job: Developer
+    skill: Elite
+kevin:
+    name: Luther King
+    job: Memory of the people
+    skill: writter
+---
