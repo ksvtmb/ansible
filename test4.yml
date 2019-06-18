@@ -1,0 +1,10 @@
+windows_path: c:\windows
+foo_x: "{{ variable }}"
+foo4: "{{ variable }}/additional/string/literal"
+foo2: "{{ variable }}\\backslashes\\are\\also\\special\\characters"
+foo3: "even if it's just a string literal it must all be quoted"
+foo: "E:\\path\\rest\\of\\path"
+
+a scalar in block mapping: this } is [ all , valid
+
+flow mapping: { key: "you { should [ use , quotes here" }
