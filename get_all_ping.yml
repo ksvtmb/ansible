@@ -1,0 +1,12 @@
+---
+# this is playbook for ansible. test with our hosts
+- hosts: vbox
+  tasks:
+    - name: test connection with virtual box machines
+      ping:
+      remote_user: kas
+- hosts: ros
+  tasks:
+   - name: test mikrotik
+     ping:
+  gather_facts: no
