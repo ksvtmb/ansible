@@ -1,0 +1,12 @@
+---
+# get disk space from my hosts over ansible
+# ansible-playbook get_disk_space.yml
+- hosts: vbox
+  
+  tasks:
+  - name: find disk space available.
+    command: df -hPT
+    become: true
+    become_user: root
+    register: out
+  - debug: var=out.stdout_lines
