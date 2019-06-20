@@ -1,5 +1,5 @@
 ---
-# this is playbook for ansible. test with our hosts
+# this is playbook for ansible. test connection with our hosts.
 - hosts: vbox
   tasks:
     - name: test connection with virtual box machines
