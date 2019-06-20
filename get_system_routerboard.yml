@@ -1,0 +1,12 @@
+---
+# get routerboard info from mikrotik routers devices
+# ansible-playbook get_system_routerboard.yml
+- hosts: ros
+
+  tasks:
+    - name: run command on remote devices
+      routeros_command:
+        commands: /system routerboard print
+      register: out
+    - debug: var=out.stdout_lines
+  gather_facts: false
